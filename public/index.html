@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>QuickMeet - Video Call & Chat</title>
+    <title>learninGo Rooms</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
@@ -13,32 +13,37 @@
 
 <body>
     <navbar>
-        <div class="logo">QuickMeet</div>
+        <div class="logo">learninGo <br>
+            <div style="font-size: 1rem;">powered by T-Rex
+            </div>
+        </div>
     </navbar>
     <!-- <div class="landing"> -->
-        <!-- <div class="head-cont unselectable">
+    <!-- <div class="head-cont unselectable">
             Welcome to QuickMeet!
         </div> -->
 
-        <div class="main">
-            <div class="create-join">
-                <div class="text"><div class="head">Create Video Meetings in one-click.</div>
-                <div class="subtext">No sign ups required. Open Source platform.</div>
-                </div>
-                <button id="createroom" class="createroom-butt unselectable">Create Room</button><br>
-                <input type="text" name="room" spellcheck="false" placeholder="Enter Room Code" id="roomcode" class="roomcode"><br>
-                <div class="joinroom unselectable" id="joinroom">Join Room</div>
+    <div class="main">
+        <div class="create-join">
+            <div class="text">
+                <div class="head">Join learninGo classes</div>
+                <!-- <div class="subtext">No sign ups required. Open Source platform.</div> -->
             </div>
-            <div class="video-cont">
-                <video class="video-self" autoplay muted playsinline></video>
-                <div class="settings">
-                    <div class="device" id="mic"><i class="fas fa-microphone"></i></div>
-                    <div class="device" id="webcam"><i class="fas fa-video"></i></div>
-                </div>
+            <button id="createroom" class="createroom-butt unselectable">Create Room</button><br>
+            <input type="text" name="room" spellcheck="false" placeholder="Enter Room Code" id="roomcode"
+                class="roomcode"><br>
+            <button class="joinroom unselectable" id="joinroom">Join Room</button>
+        </div>
+        <div class="video-cont">
+            <video class="video-self" autoplay muted playsinline></video>
+            <div class="settings">
+                <div class="device" id="mic"><i class="fas fa-microphone"></i></div>
+                <div class="device" id="webcam"><i class="fas fa-video"></i></div>
             </div>
         </div>
+    </div>
 
-        <!-- <div class="main-cont">
+    <!-- <div class="main-cont">
 
             <form class="roomform" action="room.html" method="GET">
                 <div class="formcont">

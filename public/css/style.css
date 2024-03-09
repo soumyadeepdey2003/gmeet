@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
 * {
   text-decoration: none;
   box-sizing: border-box;
@@ -132,16 +133,26 @@ navbar .logo {
   border-bottom: 3px solid #d31c1c;
 }
 .main .create-join .joinroom {
-  margin-top: 20px;
-  width: 100%;
-  text-align: right;
+  border: 2px solid #4ecca3;
+  border-radius: 10px;
+  margin-top: 70px;
+  /* width: 100%; */
+  /* text-align: right; */
+  /* margin: 10px auto; */
+  transform: translate(-50%, -50%);
+  margin-left: 50%;
+  color: #4ecca3;
+  padding: 10px 30px;
   font-size: 24px;
   font-weight: bold;
-  color: #232931;
+  background-color: white;
+  /* color: #232931; */
 }
 .main .create-join .joinroom:hover {
   cursor: pointer;
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  background-color: rgb(242, 242, 242);
+  transition: 0.1s;
 }
 .main .video-cont {
   width: 100%;
@@ -282,7 +293,7 @@ navbar .logo {
   background: #555;
 }
 .container-room .left-cont {
-  width: 80%;
+  width: 100%;
   background-color: #393e46;
   height: 100vh;
   padding: 50px;
@@ -526,6 +537,7 @@ navbar .logo {
 .container-room .left-cont .footer {
   position: relative;
 }
+
 .container-room .left-cont .footer .utils {
   text-align: center;
   margin: 0 auto;
@@ -536,6 +548,7 @@ navbar .logo {
   border-radius: 10px;
   padding: 10px;
   justify-content: center;
+  align-items: right;
 }
 .container-room .left-cont .footer .utils .audio {
   background-color: #4ecca3;
@@ -805,3 +818,13 @@ navbar .logo {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+@media (max-width: 1100px) {
+  .right-cont {
+    display: none;
+  }
+
+  .utils {
+    margin-right: 0;
+  }
+}
