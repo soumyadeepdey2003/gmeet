@@ -718,7 +718,7 @@ whiteboardButt.addEventListener('click', () => {
     //     whiteboardCont.style.visibility = 'visible';
     //     boardVisisble = true;
     // }
-    window.open("https://trex-whiteboard.netlify.app/65ub96bngpzbjj05eojv", "_blank");
+    window.open("https://trex-whiteboard.netlify.app/", "_blank");
 })
 
 cutCall.addEventListener('click', () => {
