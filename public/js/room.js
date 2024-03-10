@@ -719,7 +719,6 @@ whiteboardButt.addEventListener('click', () => {
     //     boardVisisble = true;
     // }
     window.open("https://gmeet-mkr9.onrender.com/", "_blank");
-}
 })
 
 cutCall.addEventListener('click', () => {
