@@ -190,7 +190,7 @@ function CopyClassText() {
     }
 
     document.querySelector(".copycode-button").textContent = "Copied!"
-    setTimeout(()=>{
+    setTimeout(() => {
         document.querySelector(".copycode-button").textContent = "Copy Code";
     }, 5000);
 }
@@ -434,16 +434,16 @@ function screenShareToggle() {
             }
             myscreenshare.getVideoTracks()[0].enabled = true;
             const newStream = new MediaStream([
-                myscreenshare.getVideoTracks()[0], 
+                myscreenshare.getVideoTracks()[0],
             ]);
             myvideo.srcObject = newStream;
             myvideo.muted = true;
             mystream = newStream;
-            screenShareButt.innerHTML = (screenshareEnabled 
+            screenShareButt.innerHTML = (screenshareEnabled
                 ? `<i class="fas fa-desktop"></i><span class="tooltiptext">Stop Share Screen</span>`
                 : `<i class="fas fa-desktop"></i><span class="tooltiptext">Share Screen</span>`
             );
-            myscreenshare.getVideoTracks()[0].onended = function() {
+            myscreenshare.getVideoTracks()[0].onended = function () {
                 if (screenshareEnabled) screenShareToggle();
             };
         })
@@ -710,14 +710,16 @@ socket.on('action', (msg, sid) => {
 })
 
 whiteboardButt.addEventListener('click', () => {
-    if (boardVisisble) {
-        whiteboardCont.style.visibility = 'hidden';
-        boardVisisble = false;
-    }
-    else {
-        whiteboardCont.style.visibility = 'visible';
-        boardVisisble = true;
-    }
+    // if (boardVisisble) {
+    //     whiteboardCont.style.visibility = 'hidden';
+    //     boardVisisble = false;
+    // }
+    // else {
+    //     whiteboardCont.style.visibility = 'visible';
+    //     boardVisisble = true;
+    // }
+    window.open("https://gmeet-mkr9.onrender.com/", "_blank");
+}
 })
 
 cutCall.addEventListener('click', () => {
